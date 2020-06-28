@@ -1,0 +1,97 @@
+@keyframes pandora {
+    0% {
+        transform: translate(0, 2%);
+    }
+    50% {
+        transform: translate(10%, 5%);
+    }
+    100% {
+        transform: translate(5%, 2%);
+    }
+}
+
+@keyframes facebook {
+    0%{
+        transform: translate(10%, -5%);
+    }
+    50%{
+        transform: translate(-20%, 10%);
+    }
+    100%{
+        transform: translate(10%, -5%);
+    }
+}
+
+@keyframes instagram {
+    0%{
+        transform: translate(15%, 5%);
+    }
+    50%{
+        transform: translate(-15%, -15%);
+    }
+    100%{
+        transform: translate(15%, 5%);
+    }
+}
+
+
+@keyframes youtube {
+    0%{
+        transform: translate(10%, 15%);
+    }
+    50%{
+        transform: translate(-10%, -20%);
+    }
+    100%{
+        transform: translate(10%, 15%);
+    }
+}
+@keyframes warcraft {
+    0%{
+        transform: translate(5%, -40%);
+    }
+    50%{
+        transform: translate(20%, -20%);
+    }
+    100%{
+        transform: translate(5%, -40%);
+    }
+}
+
+@keyframes rouge {
+    0%{
+        transform: translate(2%, -5%);
+    }
+    50%{
+        transform: translate(2%, 10%);
+    }
+    100%{
+        transform: translate(2%, -5%);
+    }
+}
+@keyframes bear {
+    0%{
+        transform: translate(-50%, -20%);
+    }
+    50%{
+        transform: translate(-55%, -25%);
+    }
+    100%{
+        transform: translate(-50%, -20%);
+    }
+}
+
+@keyframes lightText {
+    0% {
+        box-shadow: 4px -7px 50px 8px rgba(63, 209, 240, 0.6);
+    }
+    50% {
+        box-shadow:0px -3px 20px 5px rgba(63, 209, 240, 0.6);
+    }
+    100% {
+        box-shadow: 4px -7px 50px 8px rgba(63, 209, 240, 0.6);
+    }
+}
+
+
+

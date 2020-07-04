@@ -49,13 +49,17 @@ img {
     text-align: center;
     align-content: center;
     padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
     position: relative;
-    transition: color .5s ease;
+    transition: all .5s ease;
     z-index: 5;
     background-color: #000000;
+    border-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png) 72 fill / 52px / 24px round;
+    border-image-source: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png);
+
+    &:hover {
+        box-shadow: 2px -1px 25px 2px rgba(255, 214, 0, 0.5);
+    }
+
 
     img {
         width: 100%;
@@ -102,24 +106,28 @@ img {
 
         .gear-link {
             margin-top: 25px;
-            
+
             &:first-child {
                 margin-top: 0;
             }
         }
     }
+
     &:nth-child(9) {
         grid-column: 1 / auto;
         grid-row: 2 / 4;
     }
+
     &:nth-child(11) {
         grid-column: 1 / auto;
         grid-row: 2 / 4;
     }
+
     &:nth-child(14) {
         grid-column: 3 / auto;
         grid-row: 4 / 4;
     }
+
     &:nth-child(13) {
         grid-column: 1 / 5;
 
@@ -136,6 +144,7 @@ img {
             box-shadow: 0px -1px 15px 2px rgba(203, 189, 77, 0.9);
         }
     }
+
     .gear-link {
         z-index: 5;
     }
@@ -267,10 +276,12 @@ section {
         box-shadow: 0px -1px 25px 2px rgba(8, 0, 203, 0.9);
     }
 }
+
 .image-scroll {
     width: 100%;
     border-radius: 50%;
 }
+
 .show {
     display: block;
 }

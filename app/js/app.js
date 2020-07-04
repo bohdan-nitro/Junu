@@ -38,6 +38,19 @@ $(document).ready(function () {
 
     });
 
+    let btn = $('.scroll-to-top');
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 330) {
+            $(".scroll-to-top").toggleClass("show");
+        } else {
+            $(".scroll-to-top").removeClass("show");
+        }
+    });
+    btn.on("click", function (e) {
+        e.preventDefault();
+        $('body, html').animate({scrollTop: 0}, '400');
+    });
+
 
 
 });

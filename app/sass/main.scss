@@ -39,6 +39,7 @@ img {
     grid-template-columns: repeat(4, [col] 1fr);
     grid-gap: 2rem;
     min-height: 100%;
+    width: 70%;
 }
 
 .portfolio-item {
@@ -54,13 +55,13 @@ img {
     position: relative;
     transition: color .5s ease;
     z-index: 5;
+    background-color: #000000;
 
-    &:hover {
-        color: #0de147;
-
-        &::before {
-            opacity: .55;
-        }
+    img {
+        width: 100%;
+        object-fit: cover;
+        max-width: 50px;
+        margin: 0 auto;
     }
 
     &::before {
@@ -71,7 +72,7 @@ img {
         right: 0;
         bottom: 0;
         background-color: #1b1b1b;
-        opacity: .2;
+        opacity: .3;
         transition: opacity .5s ease;
     }
 
@@ -90,17 +91,53 @@ img {
     }
 
     &:nth-child(5) {
-        grid-column: 1 / 3;
+        grid-column: 1 / 1;
+        grid-row: 4/5;
     }
 
 
     &:nth-child(6) {
         grid-column: 4;
         grid-row: 1 / 5;
+
+        .gear-link {
+            margin-top: 25px;
+            
+            &:first-child {
+                margin-top: 0;
+            }
+        }
     }
     &:nth-child(9) {
         grid-column: 1 / auto;
         grid-row: 2 / 4;
+    }
+    &:nth-child(11) {
+        grid-column: 1 / auto;
+        grid-row: 2 / 4;
+    }
+    &:nth-child(14) {
+        grid-column: 3 / auto;
+        grid-row: 4 / 4;
+    }
+    &:nth-child(13) {
+        grid-column: 1 / 5;
+
+    }
+
+    .gear-image {
+        width: 100%;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 5;
+
+        &:hover {
+            transform: scale(0.9);
+            box-shadow: 0px -1px 15px 2px rgba(203, 189, 77, 0.9);
+        }
+    }
+    .gear-link {
+        z-index: 5;
     }
 
 
@@ -150,7 +187,7 @@ section {
 
 .cursor {
     position: absolute;
-    border: 10px solid #36c5ee;
+    border: 8px solid #36c5ee;
     background-color: transparent;
     width: 1px;
     height: 1px;
@@ -167,7 +204,7 @@ section {
 .link-grow {
     transform: scale(1.5);
     background: #fff;
-    border: 10px solid #ffffff;
+    border: 9px solid #ffffff;
     box-shadow: 2px 5px 40px 10px rgba(242, 232, 240, 0.2);
     transition: all .3s ease;
     transition-property: background, transform;
@@ -204,8 +241,36 @@ section {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    max-width: 1250px;
+    max-width: 1350px;
     padding: 0 20px;
     justify-content: center;
     transform: translate(-50, -50%);
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 35px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: none;
+    animation-name: facebook;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 7;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0px -1px 25px 2px rgba(8, 0, 203, 0.9);
+    }
+}
+.image-scroll {
+    width: 100%;
+    border-radius: 50%;
+}
+.show {
+    display: block;
 }

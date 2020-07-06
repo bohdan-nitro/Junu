@@ -510,35 +510,7 @@
                 }
             }
 
-            .think-wrapper-small {
-                width: 100%;
-                position: absolute;
-                left: 35%;
-                top: 10%;
-                z-index: 9;
-                max-width: 220px;
 
-                .text-wrapper {
-                    width: 100%;
-                    font-size: 18px;
-                    font-weight: 700;
-                    position: absolute;
-                    top: 20%;
-                    left: 24%;
-                    line-height: 20px;
-
-                }
-
-                .character-name {
-                    position: absolute;
-                    width: 100%;
-                    top: 95%;
-                    left: 52%;
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: #0de147;
-                }
-            }
         }
 
     }
@@ -739,6 +711,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 5;
 
     .logo {
         width: 100%;

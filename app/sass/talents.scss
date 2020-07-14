@@ -1,0 +1,451 @@
+.talents {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    z-index: 3;
+
+    .intro-title {
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2;
+        font-family: BlizQuadrataWeb, serif;
+        font-weight: 400;
+        text-shadow: rgb(0, 0, 0) 2px 4px 2px;
+        color: rgb(235, 222, 194);
+        letter-spacing: 4px;
+        font-size: 60px;
+        z-index: 5;
+        max-width: 250px;
+
+
+    }
+
+    .intro-image {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        z-index: 5;
+        max-width: 220px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin: 0 auto;
+        height: 100%;
+        padding: 20px 20px 40px 40px;
+
+        .left-side {
+            display: flex;
+            width: 33%;
+            height: 100%;
+            flex-direction: column;
+
+
+            .content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                z-index: 5;
+                border-image: url(../images/src/macros-1.jpg) 40 fill / 32px / 5px round;
+                border-image-repeat: round;
+                max-width: 600px;
+                margin-bottom: 20px;
+
+                .image-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    max-height: 375px;
+                    max-width: 500px;
+                    border-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png) 72 fill / 52px / 24px round;
+                    border-image-source: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png);
+                    z-index: 5;
+                    transition: all 0.3s ease;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+
+                    &:hover {
+                        box-shadow: 2px 1px 15px 2px rgba(255, 214, 0, 0.6);
+                    }
+
+                    .talents {
+                        width: 100%;
+                        margin: 0 auto;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .title-wrapper {
+                    display: flex;
+                    width: 100%;
+                    text-align: center;
+                    z-index: 5;
+                    max-width: 500px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+
+                    .title {
+                        width: 100%;
+                        text-align: center;
+                        margin: 0 auto;
+                        line-height: 1.2;
+                        font-family: BlizQuadrataWeb, serif;
+                        font-weight: 400;
+                        text-shadow: rgb(0, 0, 0) 2px 4px 2px;
+                        color: rgb(235, 222, 194);
+                        letter-spacing: 4px;
+                        font-size: 40px;
+                        z-index: 5;
+                    }
+                }
+
+                .description-wrapper {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    z-index: 5;
+                    max-width: 400px;
+                    max-height: 300px;
+                    margin: 0 auto;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+
+                    .description {
+                        width: 100%;
+                        max-width: 350px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        text-align: center;
+
+                    }
+
+                    .description-image {
+                        width: 100%;
+                        max-width: 250px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-family: BlizQuadrataWeb, serif;
+                        font-weight: 400;
+                        text-shadow: rgb(0, 0, 0) 2px 4px 2px;
+                        color: #f4f4f4;
+
+                        &:nth-child(2) {
+                            margin-top: 5px;
+                        }
+
+                        &:nth-child(3) {
+                            margin-top: 5px;
+                        }
+
+                        &:nth-child(4) {
+                            margin-top: 5px;
+                        }
+
+                        &:nth-child(5) {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .center {
+            position: relative;
+            display: flex;
+            width: 33%;
+            height: 100%;
+            z-index: 5;
+            flex-direction: column;
+            border-image: url(../images/src/macros-1.jpg) 40 fill / 32px / 5px round;
+            border-image-repeat: round;
+            padding: 0 20px;
+            margin-left: 40px;
+            max-width: 550px;
+            max-height: 740px;
+
+            .wrapper {
+                position: absolute;
+                top: 75px;
+                left: 40px;
+                display: flex;
+                width: 100%;
+                max-width: 480px;
+                height: 100%;
+                max-height: 300px;
+                z-index: 5;
+                transition: all 0.2s linear;
+                opacity: 0;
+
+                &.active {
+                    opacity: 1;
+                }
+
+                .video-item {
+                    border-radius: 5%;
+                    border-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png) 72 fill / 52px / 24px round;
+                    border-image-source: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png);
+                    border-image-repeat: round;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.2s linear;
+                    margin: 0 auto;
+
+                }
+
+                video {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            .title {
+                margin: 0 auto;
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+                line-height: 1.2;
+                font-family: BlizQuadrataWeb, serif;
+                font-weight: 400;
+                text-shadow: rgb(0, 0, 0) 2px 4px 2px;
+                color: rgb(235, 222, 194);
+                letter-spacing: 4px;
+                font-size: 40px;
+                z-index: 5;
+                max-width: 250px;
+            }
+
+            .macro-wrapper {
+                position: absolute;
+                top: 56%;
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .macro-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 25px;
+                    border-image: url(../images/src/macros-1.jpg) 40 fill / 32px / 5px round;
+                    border-image-repeat: round;
+                    position: relative;
+
+                    &:nth-child(1) {
+                        .macro-text {
+                            transform: translateY(-20px);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 25px;
+
+                        .macro-text {
+                            transform: translateY(-20px);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 35px;
+
+                        .macro-text {
+                            transform: translateY(-30px);
+                        }
+                    }
+                }
+
+                .macro-title {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: #fff;
+                    margin-left: 20px;
+                    width: 100%;
+                    max-width: 50px;
+
+                    .macro-image {
+                        width: 100%;
+                        max-width: 45px;
+                        align-items: center;
+                        transition: all 0.3s linear;
+                        border-radius: 50%;
+
+                        &:hover {
+                            box-shadow: 2px 1px 15px 2px rgba(255, 214, 0, 0.6);
+                        }
+                    }
+                }
+
+                .macro-text {
+                    color: #fff;
+                    padding: 0 20px;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 500px;
+                    text-align: center;
+                    display: none;
+                    height: 100%;
+                    max-height: 75px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    transition: opacity 0.2s linear;
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            width: 33%;
+            height: 100%;
+            z-index: 5;
+            flex-direction: column;
+            border-image: url(../images/src/macros-1.jpg) 40 fill / 32px / 5px round;
+            border-image-repeat: round;
+            margin-left: 40px;
+            max-width: 550px;
+            max-height: 740px;
+
+            .wrapper {
+                display: flex;
+                width: 100%;
+                margin: 0 auto;
+                max-width: 450px;
+                height: 100%;
+                max-height: 300px;
+                z-index: 5;
+                justify-content: flex-end;
+
+                .video-item {
+                    margin-top: 15px;
+                    border-radius: 5%;
+                    transition: all 0.3s linear;
+                    border-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png) 72 fill / 52px / 24px round;
+                    border-image-source: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/97YB2N31Y9DI1555957771922.png);
+                    border-image-repeat: round;
+                }
+
+                video {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            .title {
+                margin: 0 auto;
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+                line-height: 1.2;
+                font-family: BlizQuadrataWeb, serif;
+                font-weight: 400;
+                text-shadow: rgb(0, 0, 0) 2px 4px 2px;
+                color: rgb(235, 222, 194);
+                letter-spacing: 4px;
+                font-size: 40px;
+                z-index: 5;
+                max-width: 250px;
+            }
+
+            .combo-wrapper {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .combo-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 25px;
+                    border-image: url(../images/src/macros-1.jpg) 40 fill / 32px / 5px round;
+                    border-image-repeat: round;
+                    position: relative;
+
+                    &:nth-child(1) {
+                        .combo-text {
+                            transform: translateY(-20px);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 25px;
+
+                        .combo-text {
+                            transform: translateY(-20px);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 35px;
+
+                        .combo-text {
+                            transform: translateY(-30px);
+                        }
+                    }
+                }
+
+                .combo-title {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: #fff;
+                    margin-left: 20px;
+                    width: 100%;
+                    max-width: 45px;
+
+                    .combo-image {
+                        width: 100%;
+                        max-width: 55px;
+                        align-items: center;
+                        transition: all 0.3s linear;
+                        border-radius: 50%;
+
+                        &:hover {
+                            box-shadow: 2px 1px 15px 2px rgba(255, 214, 0, 0.6);
+                        }
+                    }
+                }
+
+                .combo-text {
+                    color: #fff;
+                    padding: 0 20px;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 500px;
+                    text-align: center;
+                    display: none;
+                    height: 100%;
+                    max-height: 75px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    transition: opacity 0.2s linear;
+                }
+            }
+        }
+    }
+
+}

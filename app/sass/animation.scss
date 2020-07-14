@@ -92,6 +92,17 @@
         box-shadow: 4px -7px 50px 8px rgba(63, 209, 240, 0.6);
     }
 }
+@keyframes lightTalents {
+    0% {
+        box-shadow: 2px -1px 5px 2px rgba(255, 214, 0, 0.5);
+    }
+    50% {
+        box-shadow: 4px 1px 15px 4px rgba(255, 214, 0, 0.6);
+    }
+    100% {
+        box-shadow: 2px -1px 5px 2px rgba(255, 214, 0, 0.5);
+    }
+}
 
 
 

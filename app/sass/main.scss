@@ -2,6 +2,7 @@
 @import "mixins";
 @import "intro";
 @import "faq";
+@import "talents";
 
 a, ul, li {
     text-decoration: none;
@@ -259,8 +260,8 @@ section {
 
 .scroll-to-top {
     position: fixed;
-    right: 35px;
-    bottom: 25px;
+    right: 90px;
+    bottom: 30px;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -270,8 +271,8 @@ section {
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    z-index: 7;
-    transition: all 0.3s ease;
+    z-index: 10;
+    transition: all 0.2s ease;
 
     &:hover {
         box-shadow: 0px -1px 25px 2px rgba(8, 0, 203, 0.9);
@@ -285,6 +286,7 @@ section {
 
 .show {
     display: block;
+    opacity: 1;
 }
 
 .background {
@@ -300,6 +302,7 @@ section {
         object-fit: cover;
     }
 }
+
 .intro-mask {
     display: flex;
     width: 100%;
@@ -307,7 +310,7 @@ section {
     position: absolute;
     background-color: #1b1b1b;
     z-index: 1;
-    opacity: 0.9;
+    opacity: 0.8;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 3px;
@@ -337,4 +340,3 @@ section {
         background-repeat: repeat-x;
     }
 }
-

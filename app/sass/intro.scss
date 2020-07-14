@@ -1,4 +1,5 @@
 @import "mixins";
+
 .intro-background {
     display: flex;
     width: 100%;
@@ -13,19 +14,6 @@
     z-index: -1;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.intro-mask {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-color: #1b1b1b;
-    z-index: 1;
-    opacity: 0.2;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 3px;
 }
 
 .video__background {
@@ -536,7 +524,7 @@
 
     .border__item {
         position: absolute;
-        background-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/SR1X8SNXYYX91555957771860.png);
+        background-image: url(../images/src/header.png);
         height: 103px;
         width: 100%;
         top: -28px;
@@ -620,6 +608,7 @@
         margin: 0 auto;
         width: 100%;
         max-width: 250px;
+
         img {
             margin-top: 15px;
         }
@@ -669,13 +658,14 @@
         height: 100%;
         max-height: 80px;
         max-width: 220px;
+        border-image: url("../images/src/wow btn.png") 25 50 30 fill / 30px 50px / 0 repeat round;
 
         z-index: 5;
 
         .btn {
             width: 100%;
             background: transparent;
-            border-image: url("https://bnetcmsus-a.akamaihd.net/cms/template_resource/YG5XN3AWU0DZ1555957771296.png") 25 50 30 fill / 30px 50px / 0 repeat round;
+            border-image: url("../images/src/wow btn.png") 25 50 30 fill / 30px 50px / 0 repeat round;
             border-image-repeat: repeat round;
             border-width: 30px;
             border-style: solid;
@@ -884,24 +874,26 @@
 }
 
 
-
 @media screen and (max-width: 1280px) {
 
-  .info__wrapper {
-      top: 30%;
-  }
+    .info__wrapper {
+        top: 30%;
+    }
 
     .right-side-wrapper {
         .logo {
             max-width: 350px;
             left: 21%;
         }
+
         .right-side-text-content {
             top: 21%;
+
             .right__title {
                 font-size: 44px;
                 max-height: 65px;
             }
+
             .right-side-description {
                 .stream-social {
                     max-width: 45px;
@@ -909,6 +901,7 @@
                 }
             }
         }
+
         .video__wrapper {
             max-width: 355px;
             max-height: 200px;
@@ -917,15 +910,200 @@
         }
 
     }
-    
+
     .title__wrapper {
         .intro-junu-image {
             max-width: 250px;
             margin-top: 10px;
         }
+
         .btn__wrapper {
             margin-top: 35px;
         }
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    .pandora__ball {
+        .container {
+            max-width: 940px;
+
+            .intro__wrapper {
+                max-width: 190px;
+                max-height: 200px;
+                .intro {
+                    width: 100px;
+                    height: 100px;
+                    box-shadow: 4px -2px 20px 4px rgba(63,209,240,.6);
+                    &::before {
+                        left: 10%;
+                        top: 11%;
+                        max-width: 45px;
+                        max-height: 45px;
+                    }
+                }
+
+                .nav__menu {
+                    max-width: 140px;
+                    max-height: 200px;
+
+                    .nav__item {
+                        max-width: 33px;
+                        max-height: 33px;
+                        left: 55%;
+                        top: 8%;
+
+                        &:nth-child(2) {
+                            top: 35%;
+                            left: 65%;
+                            .nav__social {
+                                    box-shadow: 2px -1px 10px 2px rgba(203, 77, 163, 0.9);
+                            }
+                        }
+                        &:nth-child(3) {
+                            top: 60%;
+                            left: 55%;
+                            .nav__social {
+                                box-shadow: 2px -1px 10px 2px rgba(241, 3, 0, 0.9);
+                            }
+                        }
+                        &:nth-child(4) {
+                            top: 82%;
+                            left: 25%;
+                            .nav__social {
+                                box-shadow: 2px -1px 10px 2px rgba(255, 214, 0, 0.5);
+                            }
+                        }
+                        .nav__social {
+                            box-shadow: 2px -1px 10px 2px rgba(8, 0, 203, 0.9);
+                        }
+
+                    }
+
+                }
+            }
+            .title__wrapper {
+                max-width: 290px;
+                max-height: 110px;
+                transform: translate(40%,30%);
+
+                .intro__title {
+                    letter-spacing: 3px;
+                    font-size: 40px;
+                }
+                .btn__wrapper {
+                    max-height: 73px;
+                    max-width: 185px;
+                    .btn {
+                        padding: 5px 32px 15px;
+                    }
+                }
+                .intro-image {
+                    max-width: 190px;
+                    img {
+                        margin-top: 8px;
+                    }
+                }
+
+                .intro-junu-image {
+                    margin-top: 30px;
+                    max-width: 190px;
+                }
+                .intro__description {
+                    .text {
+                        line-height: 20px;
+                        font-family: BlizQuadrataWeb,serif;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        text-shadow: #000 0 2px 2px;
+                        color: #ebdec2;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+            .right-side-wrapper {
+                .logo {
+                    top: 5%;
+                    max-width: 220px;
+                    left: 58%;
+                }
+                .right-side-text-content {
+                    left: 33%;
+                    top: 18%;
+
+                    .right__title {
+                        margin-top: 20px;
+                        font-size: 34px;
+                        max-height: 51px;
+                    }
+                    .right-side-image {
+                        max-width: 205px;
+                    }
+                    .right-side-description {
+                        .text {
+                            font-size: 15px;
+                            font-weight: 700;
+                            letter-spacing: 3px;
+                        }
+                        .stream-social {
+                            top: 31%;
+                            left: 72%;
+                            max-width: 30px;
+                            max-height: 30px;
+                            box-shadow: 1px -1px 25px 4px rgba(237,8,221,.5);
+                        }
+                    }
+                }
+                .video__wrapper {
+                    top: 55%;
+                    left: 48%;
+                    max-width: 279px;
+                    max-height: 162px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .pandora__ball {
+        .container {
+            .title__wrapper {
+                transform: translate(12%,40%);
+            }
+            .info__wrapper {
+                top: 50%;
+            }
+            .right-side-wrapper {
+                .logo {
+                    top: 3%;
+                    max-width: 220px;
+                    left: 10%;
+                }
+                .video__wrapper {
+                    top: 63%;
+                    left: -14%;
+                }
+                .right-side-text-content {
+                    left: 0;
+
+                    .right-side-description {
+                        .stream-social {
+                            max-width: 100px;
+                            max-height: 100px;
+                            top: 28%;
+                            left: 28%;
+                            img {
+                                max-width: 100px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
